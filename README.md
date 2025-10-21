@@ -158,13 +158,13 @@ Exclude unwanted elements:
 # 3. Python Implementation Example
 
 
-from diffusers import DiffusionPipeline
+    from diffusers import DiffusionPipeline
 
 
-import torch
+    import torch
 
 
-class VideoGenerator:
+    class VideoGenerator:
    
     def __init__(self, model_name="zeroscope-v2-xl"):
     
@@ -190,19 +190,16 @@ class VideoGenerator:
         ).frames[0]
 
 
-generator = VideoGenerator()
+    generator = VideoGenerator()
 
-
-basic_vid = generator.generate_video(
+    basic_vid = generator.generate_video(
 
     "A spaceship flying through space"
+    
+    )
 
-)
+    advanced_vid = generator.generate_video(
 
-
-
-advanced_vid = generator.generate_video(
-   
     prompt="""Cinematic shot of SpaceX Starship launch:
     
              - Camera: Slow-motion tracking from launchpad POV
@@ -218,8 +215,8 @@ advanced_vid = generator.generate_video(
     fps=24,
     
     steps=50
-
-)
+    
+    )
 
 # 4. Prompt Engineering Best Practices
 
@@ -235,18 +232,20 @@ advanced_vid = generator.generate_video(
 
 # Technical Parameters:
 
-{
-  "duration": "15 seconds",
+    {
+   
+     "duration": "15 seconds",
   
-  "aspect_ratio": "16:9", 
+    "aspect_ratio": "16:9", 
   
-  "framerate": 24,
+    "framerate": 24,
   
-  "style": "hyper-realistic CGI",
+    "style": "hyper-realistic CGI",
   
-  "lighting": "volumetric god rays"
-}
-
+    "lighting": "volumetric god rays"
+    
+    }
+ 
 # Reference Embedding:
 
 "Visual composition similar to <reference_image.jpg> but with:  
@@ -289,7 +288,7 @@ Combine:
 
 # B. Interactive Generation
 
-while not user_satisfied:
+    while not user_satisfied:
 
     generated_vid = model.generate(
     

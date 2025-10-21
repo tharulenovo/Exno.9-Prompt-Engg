@@ -160,7 +160,9 @@ Exclude unwanted elements:
 
 from diffusers import DiffusionPipeline
 
+
 import torch
+
 
 class VideoGenerator:
    
@@ -187,21 +189,36 @@ class VideoGenerator:
             fps=fps
         ).frames[0]
 
+
 generator = VideoGenerator()
 
+
 basic_vid = generator.generate_video(
+
     "A spaceship flying through space"
+
 )
 
+
+
 advanced_vid = generator.generate_video(
+   
     prompt="""Cinematic shot of SpaceX Starship launch:
+    
              - Camera: Slow-motion tracking from launchpad POV
+             
              - Details: Visible engine plume dynamics
+             
              - Atmosphere: Dawn lighting with fog effects""",
+   
     negative_prompt="low quality, cartoonish, unrealistic",
+    
     num_frames=48,
+    
     fps=24,
+    
     steps=50
+
 )
 
 # 4. Prompt Engineering Best Practices

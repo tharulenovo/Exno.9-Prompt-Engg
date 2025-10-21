@@ -157,9 +157,13 @@ Exclude unwanted elements:
 
 # 3. Python Implementation Example
 
+
 from diffusers import DiffusionPipeline
+
 import torch
+
 class VideoGenerator:
+   
     def __init__(self, model_name="zeroscope-v2-xl"):
     
         self.pipe = DiffusionPipeline.from_pretrained(
@@ -215,7 +219,6 @@ advanced_vid = generator.generate_video(
 # Technical Parameters:
 
 {
- 
   "duration": "15 seconds",
   
   "aspect_ratio": "16:9", 
@@ -225,7 +228,6 @@ advanced_vid = generator.generate_video(
   "style": "hyper-realistic CGI",
   
   "lighting": "volumetric god rays"
-
 }
 
 # Reference Embedding:

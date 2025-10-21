@@ -159,21 +159,14 @@ Exclude unwanted elements:
 
 
     from diffusers import DiffusionPipeline
-
-
     import torch
-
-
+    
     class VideoGenerator:
    
     def __init__(self, model_name="zeroscope-v2-xl"):
-    
         self.pipe = DiffusionPipeline.from_pretrained(
-        
             model_name,
-            
             torch_dtype=torch.float16
-        
         ).to("cuda")
     
     def generate_video(self, prompt, negative_prompt="", 
@@ -188,34 +181,24 @@ Exclude unwanted elements:
             guidance_scale=15,
             fps=fps
         ).frames[0]
-
-
+    #Usage Examples
     generator = VideoGenerator()
 
+    # Basic prompt
     basic_vid = generator.generate_video(
-
-    "A spaceship flying through space"
-    
+        "A spaceship flying through space"
     )
 
+    # Advanced prompt
     advanced_vid = generator.generate_video(
-
-    prompt="""Cinematic shot of SpaceX Starship launch:
-    
-             - Camera: Slow-motion tracking from launchpad POV
-             
-             - Details: Visible engine plume dynamics
-             
-             - Atmosphere: Dawn lighting with fog effects""",
-   
-    negative_prompt="low quality, cartoonish, unrealistic",
-    
-    num_frames=48,
-    
-    fps=24,
-    
-    steps=50
-    
+        prompt="""Cinematic shot of SpaceX Starship launch:
+                  - Camera: Slow-motion tracking from launchpad POV
+                  - Details: Visible engine plume dynamics
+                  - Atmosphere: Dawn lighting with fog effects""",
+        negative_prompt="low quality, cartoonish, unrealistic",
+        num_frames=48,
+        fps=24,
+        steps=50
     )
 
 # 4. Prompt Engineering Best Practices
@@ -233,17 +216,11 @@ Exclude unwanted elements:
 # Technical Parameters:
 
     {
-   
      "duration": "15 seconds",
-  
-    "aspect_ratio": "16:9", 
-  
+     "aspect_ratio": "16:9", 
     "framerate": 24,
-  
     "style": "hyper-realistic CGI",
-  
     "lighting": "volumetric god rays"
-    
     }
  
 # Reference Embedding:
@@ -289,15 +266,10 @@ Combine:
 # B. Interactive Generation
 
     while not user_satisfied:
-
     generated_vid = model.generate(
-    
         prompt + user_feedback,
-        
         preview=True
-    
     )
-    
     user_feedback = get_user_input()
 
 # C. Physics-Aware Prompting    

@@ -107,52 +107,39 @@ FPS: 24 for filmic look"
 
 Break videos into sequential segments:
 
-"Create a 15-second product demo:  
-
-1. 0-5s: Wide shot showing product in context  
-
-2. 5-10s: Close-up highlighting key features  
-
-3. 10-15s: Text overlay with value proposition"
+    "Create a 15-second product demo:  
+    1. 0-5s: Wide shot showing product in context  
+    2. 5-10s: Close-up highlighting key features  
+    3. 10-15s: Text overlay with value proposition"
 
 # B. Style Anchoring
 
 Reference known media properties:
 
-"Generate in the style of Studio Ghibli:  
-
-- Hand-painted watercolor backgrounds  
-
-- Character designs with soft edges  
-
-- Gentle camera movements  
-
-- Pastel color palette"
+    "Generate in the style of Studio Ghibli:  
+    - Hand-painted watercolor backgrounds  
+    - Character designs with soft edges  
+    - Gentle camera movements  
+    - Pastel color palette"
 
 # C. Motion Specification
 
 Control movement dynamics:
 
-"Camera: Slow 360° orbit around subject  
-
-Subject motion: Hair blowing in wind (speed: gentle breeze)  
-
-Background: Time-lapse clouds moving left-to-right"
+    "Camera: Slow 360° orbit around subject  
+    Subject motion: Hair blowing in wind (speed: gentle breeze)  
+    Background: Time-lapse clouds moving left-to-right"
 
 
 # D. Negative Prompting
 
 Exclude unwanted elements:
 
-"Exclude:  
-
-- Watermarks  
-
-- Low-resolution frames  
-
-- Uncanny valley effects  
-
-- Jittery camera movements"
+    "Exclude:  
+    - Watermarks  
+    - Low-resolution frames  
+    - Uncanny valley effects  
+    - Jittery camera movements"
 
 
 # 3. Python Implementation Example
@@ -225,25 +212,18 @@ Exclude unwanted elements:
  
 # Reference Embedding:
 
-"Visual composition similar to <reference_image.jpg> but with:  
-
-- Cooler color temperature  
-
-- More dynamic camera angles  
-
-- Added futuristic HUD elements"
+    "Visual composition similar to <reference_image.jpg> but with:  
+    - Cooler color temperature  
+    - More dynamic camera angles  
+    - Added futuristic HUD elements"
 
 # Iterative Refinement:
 
-"Based on output #1 (attached):  
-
-1. Maintain the excellent lighting  
-
-2. Increase character detail by 30%  
-
-3. Smooth the walking animation  
-
-4. Add falling cherry blossom petals"
+    "Based on output #1 (attached):  
+    1. Maintain the excellent lighting  
+    2. Increase character detail by 30%  
+    3. Smooth the walking animation  
+    4. Add falling cherry blossom petals"
 
 # Comparative Results Analysis
 
@@ -274,25 +254,21 @@ Combine:
 
 # C. Physics-Aware Prompting    
 
-"Water simulation parameters:  
-
-- Surface tension: 0.072 N/m  
-
-- Viscosity: 0.89 mPa·s  
-
-- Splash particle count: 500-700  
-
-- Render: Photorealistic fluid dynamics"
+    "Water simulation parameters:  
+    - Surface tension: 0.072 N/m  
+    - Viscosity: 0.89 mPa·s  
+    - Splash particle count: 500-700  
+    - Render: Photorealistic fluid dynamics"
 
 # Prompt For Video Generation
 
-Create a 30-second advertisement video for Cetaphil Face Wash featuring only male characters,
-targeting young men with sensitive or acne-prone skin. Start with a close-up of a young man looking at his irritated
-skin in the mirror. Show him applying Cetaphil Face Wash with a smooth lather, followed by water rinsing off easily.
-Include visuals of calming ingredients like aloe vera and water splashes. Show his skin
-visibly clearer and healthier after use. End with him confidently stepping out, smiling. Voiceover:
-‘Real care for real skin. Cetaphil – gentle, effective, and made for men.’ Include soft, modern background
-music and display the Cetaphil logo at the end.
+    Create a 30-second advertisement video for Cetaphil Face Wash featuring only male characters,
+    targeting young men with sensitive or acne-prone skin. Start with a close-up of a young man looking at his irritated
+    skin in the mirror. Show him applying Cetaphil Face Wash with a smooth lather, followed by water rinsing off easily.
+    Include visuals of calming ingredients like aloe vera and water splashes. Show his skin
+    visibly clearer and healthier after use. End with him confidently stepping out, smiling. Voiceover:
+    ‘Real care for real skin. Cetaphil – gentle, effective, and made for men.’ Include soft, modern background
+    music and display the Cetaphil logo at the end.
 
 # Result: The Prompt of the above task executed successfully
 

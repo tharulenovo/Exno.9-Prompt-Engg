@@ -158,13 +158,20 @@ Exclude unwanted elements:
 # 3. Python Implementation Example
 
 from diffusers import DiffusionPipeline
+
 import torch
 
+
 class VideoGenerator:
+
     def __init__(self, model_name="zeroscope-v2-xl"):
+    
         self.pipe = DiffusionPipeline.from_pretrained(
+        
             model_name,
+            
             torch_dtype=torch.float16
+        
         ).to("cuda")
     
     def generate_video(self, prompt, negative_prompt="", 
